@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - 离线密码管家</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .nav {
+            background: #f8f9fa;
+            padding: 15px 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #764ba2;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .feature-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-box h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+
+        .faq-item {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #555;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-box h2 {
+            color: white;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .contact-box a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .nav, .footer {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📞 技术支持</h1>
+            <p>离线密码管家使用指南与常见问题</p>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">← 返回首页</a>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>应用介绍</h2>
+                <p><strong>离线密码管家</strong> 是一款完全离线的密码管理应用，专为注重隐私和数据安全的用户设计。</p>
+                
+                <div class="feature-box">
+                    <h3>核心特性</h3>
+                    <ul>
+                        <li><strong>完全离线：</strong>所有数据仅存储在您的设备本地，永不上传到任何服务器</li>
+                        <li><strong>无需注册：</strong>无需创建账号、绑定邮箱或提供任何个人信息</li>
+                        <li><strong>强加密保护：</strong>采用 AES-256 军事级加密算法保护您的密码</li>
+                        <li><strong>生物识别：</strong>支持 Face ID 和 Touch ID 快速安全解锁</li>
+                        <li><strong>主密码保护：</strong>可设置主密码作为额外的安全层</li>
+                        <li><strong>自动锁定：</strong>应用进入后台时自动锁定，防止未授权访问</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>常见问题</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 我的密码数据会被上传到云端吗？</div>
+                    <div class="faq-answer">
+                        <p><strong>A: 不会。</strong>这是离线密码管家的核心承诺。您的所有密码数据仅存储在您的 iPhone 本地，应用不会联网、不会上传、不会同步任何数据到云端。开发者无法访问您的任何数据。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 如果我换手机了，如何迁移数据？</div>
+                    <div class="faq-answer">
+                        <p><strong>A:</strong> 由于应用完全离线，数据迁移需要通过 iPhone 的系统备份功能（iCloud 备份或 iTunes/Finder 备份）来完成。在新设备上恢复备份后，您的密码数据会随之迁移。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 忘记主密码怎么办？</div>
+                    <div class="faq-answer">
+                        <p><strong>A:</strong> 由于应用采用强加密且完全离线，如果忘记主密码，将无法恢复已加密的密码数据。这是确保数据安全的必要代价。建议您妥善保管主密码，可以将其记录在安全的地方。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: Face ID / Touch ID 解锁是否安全？</div>
+                    <div class="faq-answer">
+                        <p><strong>A:</strong> 非常安全。生物识别数据由 iOS 系统的安全区域（Secure Enclave）管理，应用无法直接访问您的生物特征信息。即使使用生物识别解锁，您的密码数据仍然受到 AES-256 加密保护。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 应用是否开源？</div>
+                    <div class="faq-answer">
+                        <p><strong>A:</strong> 目前应用尚未开源。我们理解开源对于安全应用的重要性，未来可能会考虑开源项目的核心部分。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 如何确保数据不会丢失？</div>
+                    <div class="faq-answer">
+                        <p><strong>A:</strong> 建议定期通过 iCloud 或 iTunes/Finder 备份您的 iPhone。这样即使设备损坏或丢失，您也可以从备份中恢复数据。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: 应用会收集我的使用数据吗？</div>
+                    <div class="faq-answer">
+                        <p><strong>A:</strong> 不会。应用完全离线运行，不收集任何使用数据、不发送任何统计信息、不包含任何分析工具。详见<a href="privacy.html" style="color: #667eea; font-weight: 600;">隐私政策</a>。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>使用指南</h2>
+                
+                <h3>首次使用</h3>
+                <ol>
+                    <li>下载并安装应用</li>
+                    <li>首次打开时设置主密码（请务必记住此密码）</li>
+                    <li>（可选）启用 Face ID 或 Touch ID 快速解锁</li>
+                    <li>开始添加您的密码条目</li>
+                </ol>
+
+                <h3>添加密码</h3>
+                <ol>
+                    <li>点击"+"按钮创建新的密码条目</li>
+                    <li>填写网站/应用名称、账号、密码等信息</li>
+                    <li>可添加备注说明</li>
+                    <li>保存即可</li>
+                </ol>
+
+                <h3>安全建议</h3>
+                <ul>
+                    <li>设置一个强主密码，包含大小写字母、数字和特殊字符</li>
+                    <li>将主密码记录在安全的地方，避免遗忘</li>
+                    <li>定期备份您的 iPhone 以防数据丢失</li>
+                    <li>启用 Face ID / Touch ID 以获得便捷的同时保持安全</li>
+                    <li>确保您的 iPhone 系统保持最新版本</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>故障排除</h2>
+
+                <h3>应用无法打开</h3>
+                <p>1. 确保您的 iOS 系统版本符合应用要求<br>
+                2. 尝试重启设备<br>
+                3. 如果问题持续，尝试卸载并重新安装应用（注意：这会清除本地数据，请先备份）</p>
+
+                <h3>Face ID / Touch ID 无法使用</h3>
+                <p>1. 检查系统设置中是否已正确设置 Face ID / Touch ID<br>
+                2. 确保在应用设置中已启用生物识别功能<br>
+                3. 尝试在应用中重新设置生物识别</p>
+
+                <h3>其他问题</h3>
+                <p>如果遇到其他问题，请通过下方联系方式与我们联系。</p>
+            </div>
+
+            <div class="contact-box">
+                <h2>联系我们</h2>
+                <p>如果您有任何问题、建议或反馈，欢迎通过以下方式联系我们：</p>
+                <a href="mailto:smilejie2020@foxmail.com">📧 smilejie2020@foxmail.com</a>
+                <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.9;">我们会尽快回复您的邮件（通常在 1-3 个工作日内）</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 离线密码管家 | <a href="privacy.html" style="color: #667eea; text-decoration: none;">隐私政策</a> | <a href="index.html" style="color: #667eea; text-decoration: none;">返回首页</a></p>
+        </div>
+    </div>
+</body>
+</html>

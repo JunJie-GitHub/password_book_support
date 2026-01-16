@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 离线密码管家</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .nav {
+            background: #f8f9fa;
+            padding: 15px 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #764ba2;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .update-date {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .intro {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #667eea;
+        }
+
+        .intro p {
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 1.05em;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .section ul, .section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        .highlight-box {
+            background: #fff9e6;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffa500;
+        }
+
+        .highlight-box strong {
+            color: #ff8c00;
+        }
+
+        .security-box {
+            background: #e6f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #1890ff;
+        }
+
+        .security-box h3 {
+            color: #1890ff;
+            margin-top: 0;
+        }
+
+        .promise-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .promise-box h3 {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .promise-box p {
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .contact-section h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .contact-section a {
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .contact-section a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .nav, .footer {
+                padding: 20px;
+            }
+
+            .section ul, .section ol {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 隐私政策</h1>
+            <p>离线密码管家的隐私承诺</p>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">← 返回首页</a>
+        </div>
+
+        <div class="content">
+            <div class="update-date">
+                最后更新日期：2026年1月16日
+            </div>
+
+            <div class="intro">
+                <p><strong>隐私是我们的核心价值。</strong></p>
+                <p>感谢您选择离线密码管家。我们深知密码管理应用对隐私保护的重要性，因此从设计之初就将"完全离线"和"数据不出设备"作为核心原则。</p>
+                <p><strong>简而言之：我们不收集、不存储、不传输您的任何数据。</strong></p>
+            </div>
+
+            <div class="promise-box">
+                <h3>我们的承诺</h3>
+                <p>✓ 您的数据 100% 留在您的设备上</p>
+                <p>✓ 我们永远无法访问您的密码</p>
+                <p>✓ 没有后门，没有例外</p>
+            </div>
+
+            <div class="section">
+                <h2>1. 信息收集</h2>
+                
+                <h3>1.1 我们不收集任何个人信息</h3>
+                <p>离线密码管家是一款完全离线的应用，我们<strong>不收集、不存储、不传输</strong>任何用户信息，包括但不限于：</p>
+                <ul>
+                    <li>您的密码数据</li>
+                    <li>您的个人身份信息（姓名、邮箱、手机号等）</li>
+                    <li>您的设备信息</li>
+                    <li>您的位置信息</li>
+                    <li>您的使用行为数据</li>
+                    <li>任何统计或分析数据</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>重要说明：</strong>应用不需要您注册账号、不需要绑定邮箱、不需要提供任何个人信息即可使用全部功能。</p>
+                </div>
+
+                <h3>1.2 本地数据存储</h3>
+                <p>您在应用中创建和保存的所有密码数据：</p>
+                <ul>
+                    <li><strong>仅存储在您的 iPhone 本地</strong>，使用 iOS 系统提供的安全存储机制</li>
+                    <li><strong>采用 AES-256 加密算法</strong>进行加密保护</li>
+                    <li><strong>永远不会离开您的设备</strong>，不会上传到任何服务器</li>
+                    <li><strong>开发者无法访问</strong>，即使我们想也做不到</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>2. 数据使用</h2>
+                
+                <h3>2.1 数据使用原则</h3>
+                <p>由于我们不收集任何数据，因此：</p>
+                <ul>
+                    <li>不存在"数据使用"这一概念</li>
+                    <li>不会将数据用于任何目的（分析、广告、研究等）</li>
+                    <li>不会与任何第三方共享数据</li>
+                    <li>不会将数据用于机器学习或 AI 训练</li>
+                </ul>
+
+                <h3>2.2 您的数据控制权</h3>
+                <p>您对自己的数据拥有 100% 的控制权：</p>
+                <ul>
+                    <li>所有数据都在您的设备上，您可以随时查看、修改、删除</li>
+                    <li>卸载应用会同时删除所有本地数据</li>
+                    <li>通过 iPhone 备份功能，您可以自主决定是否备份数据</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. 数据安全</h2>
+                
+                <div class="security-box">
+                    <h3>3.1 加密保护</h3>
+                    <p>我们采用业界标准的安全措施保护您的数据：</p>
+                    <ul>
+                        <li><strong>AES-256 加密：</strong>采用军事级加密标准，这是目前最强的对称加密算法之一</li>
+                        <li><strong>主密码保护：</strong>使用您设置的主密码作为加密密钥，只有您知道</li>
+                        <li><strong>本地加密：</strong>数据在存储到设备前已完成加密，永不以明文形式保存</li>
+                    </ul>
+                </div>
+
+                <h3>3.2 生物识别安全</h3>
+                <p>当您启用 Face ID 或 Touch ID 时：</p>
+                <ul>
+                    <li>生物识别数据由 iOS 系统的<strong>安全区域（Secure Enclave）</strong>管理</li>
+                    <li>应用<strong>无法直接访问</strong>您的面部或指纹数据</li>
+                    <li>生物识别仅用于验证您的身份，不会被存储或传输</li>
+                    <li>您的密码数据仍然由主密码加密保护</li>
+                </ul>
+
+                <h3>3.3 自动锁定</h3>
+                <p>为进一步保护您的数据安全：</p>
+                <ul>
+                    <li>应用进入后台时会自动锁定</li>
+                    <li>返回应用时需要重新通过 Face ID / Touch ID 或主密码验证</li>
+                    <li>防止他人在您离开设备时未授权访问</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. 第三方服务</h2>
+                
+                <h3>4.1 无第三方服务</h3>
+                <p>离线密码管家<strong>不集成任何第三方服务</strong>，包括但不限于：</p>
+                <ul>
+                    <li>不使用任何分析工具（如 Google Analytics、Firebase Analytics 等）</li>
+                    <li>不使用任何广告平台</li>
+                    <li>不使用任何云存储服务</li>
+                    <li>不使用任何崩溃报告工具</li>
+                    <li>不使用任何社交媒体 SDK</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>这意味着：</strong>没有任何第三方可以通过我们的应用获取您的信息。</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>5. 网络权限</h2>
+                
+                <h3>5.1 完全离线运行</h3>
+                <p>离线密码管家的工作原理：</p>
+                <ul>
+                    <li><strong>不需要网络权限</strong>即可正常运行</li>
+                    <li><strong>不会发起任何网络请求</strong>，无论是否连接网络</li>
+                    <li><strong>不会联网验证</strong>授权或进行任何在线检查</li>
+                    <li>即使在飞行模式下也能完全正常使用</li>
+                </ul>
+
+                <p>您可以通过以下方式验证：</p>
+                <ul>
+                    <li>在 iOS 设置中关闭应用的网络权限，应用仍可正常使用</li>
+                    <li>开启飞行模式，应用功能不受任何影响</li>
+                    <li>使用网络监控工具，不会检测到任何流量</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>6. 数据备份与恢复</h2>
+                
+                <h3>6.1 系统备份</h3>
+                <p>应用数据可以通过 iPhone 的系统备份功能进行备份：</p>
+                <ul>
+                    <li><strong>iCloud 备份：</strong>如果您启用了 iCloud 备份，应用的加密数据会包含在备份中</li>
+                    <li><strong>iTunes/Finder 备份：</strong>通过电脑备份 iPhone 时，应用数据会被包含在备份中</li>
+                    <li>备份的数据仍然是<strong>加密状态</strong>，需要您的主密码才能解密</li>
+                </ul>
+
+                <h3>6.2 数据迁移</h3>
+                <p>当您更换设备时：</p>
+                <ul>
+                    <li>通过 iPhone 的系统恢复功能，可以将数据迁移到新设备</li>
+                    <li>数据迁移过程由 iOS 系统处理，我们无法介入</li>
+                    <li>迁移后的数据仍然保持加密状态</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>注意：</strong>iCloud 备份由 Apple 管理，您可以在 iPhone 设置中选择是否启用。我们无法控制或访问您的 iCloud 备份。</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>7. 儿童隐私</h2>
+                
+                <p>离线密码管家适合所有年龄段的用户使用：</p>
+                <ul>
+                    <li>我们不会有意识地收集任何年龄段用户的个人信息</li>
+                    <li>由于应用完全离线且不收集数据，对儿童隐私没有任何风险</li>
+                    <li>家长可以放心让孩子使用此应用</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>8. 政策变更</h2>
+                
+                <p>如果我们的隐私政策发生变更：</p>
+                <ul>
+                    <li>我们会在此页面更新政策内容</li>
+                    <li>更新日期会显示在页面顶部</li>
+                    <li>如有重大变更，可能会通过应用更新说明通知用户</li>
+                </ul>
+
+                <p><strong>但请放心：</strong>我们的核心承诺不会改变——始终完全离线，永不收集数据。</p>
+            </div>
+
+            <div class="section">
+                <h2>9. 您的权利</h2>
+                
+                <p>虽然我们不收集您的数据，但我们仍然尊重您的以下权利：</p>
+                <ul>
+                    <li><strong>知情权：</strong>您有权了解应用如何处理数据（本政策已详细说明）</li>
+                    <li><strong>控制权：</strong>您对自己的数据拥有完全控制权</li>
+                    <li><strong>删除权：</strong>您可以随时删除应用和所有本地数据</li>
+                    <li><strong>质疑权：</strong>如对我们的隐私做法有疑问，欢迎随时联系我们</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>10. 透明度报告</h2>
+                
+                <p>为了进一步证明我们的承诺，我们在此声明：</p>
+                <ul>
+                    <li>截至目前，我们<strong>从未收到</strong>任何政府或执法机构要求提供用户数据的请求</li>
+                    <li>即使收到此类请求，我们也<strong>无法提供</strong>任何数据，因为我们根本没有用户数据</li>
+                    <li>我们<strong>不会</strong>在应用中设置后门或监控功能</li>
+                    <li>我们<strong>无法</strong>帮助用户恢复忘记的主密码，因为我们无法访问加密数据</li>
+                </ul>
+
+                <div class="promise-box">
+                    <h3>这就是离线的力量</h3>
+                    <p>没有服务器，就没有数据泄露的风险</p>
+                    <p>没有账号，就没有身份被盗的担忧</p>
+                    <p>没有网络，就没有被监控的可能</p>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h3>11. 联系我们</h3>
+                <p>如果您对本隐私政策有任何疑问、意见或建议，欢迎通过以下方式联系我们：</p>
+                <p style="margin-top: 15px;">📧 电子邮箱：<a href="mailto:smilejie2020@foxmail.com">smilejie2020@foxmail.com</a></p>
+                <p style="margin-top: 15px; color: #666; font-size: 0.95em;">我们会认真对待每一封邮件，并尽快（通常在 1-3 个工作日内）回复您的问题。</p>
+            </div>
+
+            <div class="section">
+                <h2>总结</h2>
+                <p>离线密码管家的隐私保护理念可以用一句话概括：</p>
+                <div class="promise-box">
+                    <h3>你的数据，只属于你</h3>
+                    <p>不在云端，只在本地</p>
+                    <p>不被收集，不被追踪</p>
+                    <p>100% 的控制权，0% 的隐私风险</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 离线密码管家 | <a href="support.html" style="color: #667eea; text-decoration: none;">技术支持</a> | <a href="index.html" style="color: #667eea; text-decoration: none;">返回首页</a></p>
+        </div>
+    </div>
+</body>
+</html>
